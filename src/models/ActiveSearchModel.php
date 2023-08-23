@@ -19,6 +19,7 @@ use yii\validators\FilterValidator;
 use yii\validators\NumberValidator;
 use yii\validators\RangeValidator;
 use yii\validators\StringValidator;
+use alotacents\yii2-common\events\ActiveSearchModelEvent;
 use alotacents\yii2-common\validators\NumberCompareValidator;
 
 /**
@@ -30,7 +31,7 @@ use alotacents\yii2-common\validators\NumberCompareValidator;
  * For example:
  *
  * ```php
- * use yii2tech\ar\search\ActiveSearchModel;
+ * use alotacents\yii2-common\models\ActiveSearchModel;
  *
  * $searchModel = new ActiveSearchModel([
  *     'model' => 'app\models\Item'
@@ -45,7 +46,7 @@ use alotacents\yii2-common\validators\NumberCompareValidator;
  *
  * ```php
  * <?php
- * use yii2tech\ar\search\ActiveSearchModel;
+ * use alotacents\yii2-common\models\ActiveSearchModel;
  * use yii\widgets\ActiveForm;
  *
  * $searchModel = new ActiveSearchModel([
@@ -78,7 +79,7 @@ use alotacents\yii2-common\validators\NumberCompareValidator;
 class ActiveSearchModel extends Model
 {
     /**
-     * @event ActiveSearchEvent an event that is triggered after search query is created.
+     * @event ActiveSearchModelEvent an event that is triggered after search query is created.
      */
     const EVENT_AFTER_CREATE_QUERY = 'afterCreateQuery';
 
@@ -628,7 +629,7 @@ class ActiveSearchModel extends Model
      */
     public function afterCreateQuery($query)
     {
-        $event = new ActiveSearchEvent();
+        $event = new ActiveSearchModelEvent();
         $event->query = $query;
 
         $this->trigger(self::EVENT_AFTER_CREATE_QUERY, $event);
