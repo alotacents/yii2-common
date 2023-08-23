@@ -5,7 +5,7 @@
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace alotacents\yii2-common\behaviors\softdelete;
+namespace alotacents\yii2-common\behaviors;
 
 use yii\base\Behavior;
 use yii\base\InvalidConfigException;
