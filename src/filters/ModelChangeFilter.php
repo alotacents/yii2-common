@@ -5,11 +5,11 @@
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace alotacents\yii2-common\filters;
+namespace alotacents\common\filters;
 
 use yii\base\ActionFilter;
-use alotacents\yii2-common\traits\ModelChangeTrait;
-use alotacents\yii2-common\events\ModelChangeActionEvent;
+use alotacents\common\traits\ModelChangeTrait;
+use alotacents\common\events\ModelChangeActionEvent;
 
 /**
  * ModelChangeFilter provides ability of tracking the events of model state changes (e.g. save, delete etc.)
