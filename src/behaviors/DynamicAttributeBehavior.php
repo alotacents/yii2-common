@@ -22,7 +22,7 @@ use yii\di\Instance;
  *
  * ```php
  * use yii\db\ActiveRecord;
- * use yii2tech\ar\dynattribute\DynamicAttributeBehavior;
+ * use alotacents\common\behaviors\DynamicAttributeBehavior;
  *
  * class User extends ActiveRecord
  * {
@@ -51,7 +51,7 @@ use yii\di\Instance;
  * ```
  *
  * @property BaseActiveRecord $owner
- * @property string|array|alotacents\yii2-common\SerializerInterface $serializer serializer instance or its configuration.
+ * @property string|alotacents\common\serializers\SerializerInterface $serializer serializer instance or its configuration.
  * @property array $dynamicAttributes dynamic attributes in format: name => value.
  * @property bool $isDynamicAttributeInitialized whether the dynamic attributes have been initialized or not.
  *
