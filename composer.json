@@ -33,7 +33,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"alotacents\\yii2-common\\": "src"}
+        "psr-4": {"alotacents\\common\\": "src"}
     },
     "extra": {
         "branch-alias": {
