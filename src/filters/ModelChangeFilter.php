@@ -50,7 +50,7 @@ use alotacents\common\events\ModelChangeActionEvent;
  * ```php
  * return [
  *     'as modelChange' => [
- *         'class' => 'alotacents\yii2-common\filters\ModelChangeFilter',
+ *         'class' => 'alotacents\common\filters\ModelChangeFilter',
  *         'modelClasses' => [
  *             'app\models\Page',
  *             'app\models\PageContent',
