@@ -17,7 +17,7 @@ use yii\db\BaseActiveRecord;
  *
  * ```php
  * use yii\db\ActiveRecord;
- * use alotacents\yii2-common\traits\EagerJoinTrait;
+ * use alotacents\common\traits\EagerJoinTrait;
  *
  * class Item extends ActiveRecord
  * {
