@@ -18,9 +18,9 @@ use yii\db\ActiveQuery;
  *
  * ```php
  * use yii\db\ActiveQuery;
- * use alotacents\yii2-common\traits\EagerJoinQueryTrait;
+ * use alotacents\common\traits\EagerJoinQueryTrait;
  * use yii\db\ActiveRecord;
- * use alotacents\yii2-common\traits\EagerJoinTrait;
+ * use alotacents\common\traits\EagerJoinTrait;
  *
  * class ItemQuery extends ActiveQuery
  * {
