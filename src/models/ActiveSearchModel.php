@@ -5,7 +5,7 @@
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace alotacents\yii2-common\models;
+namespace alotacents\common\models;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -19,8 +19,8 @@ use yii\validators\FilterValidator;
 use yii\validators\NumberValidator;
 use yii\validators\RangeValidator;
 use yii\validators\StringValidator;
-use alotacents\yii2-common\events\ActiveSearchModelEvent;
-use alotacents\yii2-common\validators\NumberCompareValidator;
+use alotacents\common\events\ActiveSearchModelEvent;
+use alotacents\common\validators\NumberCompareValidator;
 
 /**
  * ActiveSearchModel is a special kind of {@see Model} dedicated to the searching of ActiveRecord lists.
