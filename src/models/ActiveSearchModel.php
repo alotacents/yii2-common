@@ -31,7 +31,7 @@ use alotacents\common\validators\NumberCompareValidator;
  * For example:
  *
  * ```php
- * use alotacents\yii2-common\models\ActiveSearchModel;
+ * use alotacents\common\models\ActiveSearchModel;
  *
  * $searchModel = new ActiveSearchModel([
  *     'model' => 'app\models\Item'
@@ -46,7 +46,7 @@ use alotacents\common\validators\NumberCompareValidator;
  *
  * ```php
  * <?php
- * use alotacents\yii2-common\models\ActiveSearchModel;
+ * use alotacents\common\models\ActiveSearchModel;
  * use yii\widgets\ActiveForm;
  *
  * $searchModel = new ActiveSearchModel([
