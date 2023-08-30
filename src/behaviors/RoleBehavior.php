@@ -5,7 +5,7 @@
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace alotacents\yii2-common\behaviors;
+namespace alotacents\common\behaviors;
 
 use yii\base\Behavior;
 use yii\base\Model;
